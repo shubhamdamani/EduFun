@@ -58,7 +58,7 @@ public class fragment_1 extends Fragment {
             @Override
             public void onClick(View v) {
                 //discovering started
-                mainActivity.manager.discoverPeers(mainActivity.channel, new WifiP2pManager.ActionListener() {
+                mainActivity.wifiP2pManager.discoverPeers(mainActivity.channel, new WifiP2pManager.ActionListener() {
                     @Override
                     public void onSuccess() {
                         Toast.makeText(getActivity(),"devices discovered",Toast.LENGTH_SHORT).show();
@@ -86,7 +86,7 @@ public class fragment_1 extends Fragment {
                 WifiP2pConfig config = new WifiP2pConfig();
                 config.deviceAddress = device.deviceAddress;
 
-                mainActivity.manager.connect(mainActivity.channel, config, new WifiP2pManager.ActionListener() {
+                mainActivity.wifiP2pManager.connect(mainActivity.channel, config, new WifiP2pManager.ActionListener() {
                     @Override
                     public void onSuccess() {
                         Toast.makeText(getActivity(),"Connected to:"+device.deviceName,Toast.LENGTH_SHORT).show();
