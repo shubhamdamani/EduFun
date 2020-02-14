@@ -5,6 +5,9 @@ import android.os.Bundle;
 
 public class MainActivity extends AppCompatActivity {
 
+
+    /* Lets begin HACK36*/
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
