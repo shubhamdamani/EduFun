@@ -1,6 +1,35 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout
+<LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:orientation="vertical">
 
-</android.support.constraint.ConstraintLayout>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="turn on"
+        android:textSize="25sp"
+        android:id="@+id/enablewifi"
+        />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_height="wrap_content"
+        android:id="@+id/discover"
+        android:layout_below="@+id/enablewifi"
+        android:textSize="25sp"
+        android:text="discover"/>
+
+
+    <ListView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/discover"
+        android:id="@+id/peerlist">
+
+    </ListView>
+
+
+
+
+</LinearLayout>
