@@ -14,8 +14,8 @@ import java.util.ArrayList;
 
 public class DoodleImgClassifier {
 
-    private static final String MODEL_FILE = "myModel/model100.tflite";
-    private static final String LABELS_FILE = "myModel/labels.csv";
+    private static final String MODEL_FILE = "100/model100.tflite";
+    private static final String LABELS_FILE = "100/labels.csv";
 
     private static final int DIM_BATCH_SIZE = 1;
     public static final int DIM_IMG_SIZE_HEIGHT = 28;

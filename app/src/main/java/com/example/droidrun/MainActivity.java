@@ -15,11 +15,15 @@ import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentTransaction;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.util.Log;
+import android.view.View;
 import android.widget.ArrayAdapter;
 import android.widget.EditText;
 import android.widget.ListView;
 import android.widget.TextView;
 import android.widget.Toast;
+
+import com.example.droidrun.classification.DoodleImgClassifier;
 
 import java.io.IOException;
 import java.io.InputStream;
@@ -38,6 +42,7 @@ public class MainActivity extends AppCompatActivity {
     //Shubham732
     //VIVEk
     //Dobby
+    public DoodleImgClassifier classifier; // complete image classification
     IntentFilter intentFilter;
     WifiManager wifiManager;
     WifiP2pManager wifiP2pManager;//manager
@@ -53,10 +58,19 @@ public class MainActivity extends AppCompatActivity {
     MainActivity.ServerClass serverClass;
     MainActivity.ClientClass clientClass;
     MainActivity.SendReceive sendReceive;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+
+        try {
+            this.classifier = new DoodleImgClassifier(this);
+        } catch (IOException e) {
+            Log.e("MainActivity", "Cannot initialize tfLite model!", e);
+            e.printStackTrace();
+        }
 
         intentFilter=new IntentFilter();
         intentFilter.addAction(WifiP2pManager.WIFI_P2P_STATE_CHANGED_ACTION);
@@ -269,5 +283,7 @@ public class MainActivity extends AppCompatActivity {
         }
 
     }
+
+
 
 }
