@@ -32,6 +32,7 @@ public class SinglePlayer extends AppCompatActivity {
     TextView timer;
     TextView textViewResult;
     TextView textViewDraw;
+
     Button det,cle,nex;
     private DoodleImgClassifier classifier;
     MediaPlayer mediaRight, mediaWrong, mediaOver;
@@ -73,7 +74,7 @@ public class SinglePlayer extends AppCompatActivity {
 
         textViewResult = (TextView) findViewById(R.id.mytxt_result_label);
         textViewDraw = (TextView) findViewById(R.id.mytxt_draw_label);
-        timer = (TextView) findViewById(R.id.timer);
+        timer = (TextView) findViewById(R.id.mytimer);
         mediaRight = MediaPlayer.create(this, R.raw.tada);
         mediaWrong = MediaPlayer.create(this, R.raw.wrong);
         mediaOver = MediaPlayer.create(this, R.raw.game_over);
@@ -84,6 +85,34 @@ public class SinglePlayer extends AppCompatActivity {
         } catch (IOException e) {
             e.printStackTrace();
         }
+        int val = 60;
+        Thread timer_thread = new Thread(new Runnable() {
+            @Override
+            public void run() {
+                int total = 60;
+                // timer.setText(Integer.toString(total));
+
+                try {
+                    //  System.out.println(total);
+                    while (total >= 0) {
+
+                        timer.setText(Integer.toString(total));
+                        Thread.sleep(1000);
+                        total--;
+                    }
+
+                    mediaOver.start();
+
+
+                    // Do some stuff
+                } catch (Exception e) {
+                    e.getLocalizedMessage();
+                }
+            }
+            
+        });
+
+        timer_thread.start();
 
         nex.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -123,6 +152,7 @@ public class SinglePlayer extends AppCompatActivity {
         resetView();
 
     }
+
     public void onClearClick(View view) {
         Log.i("MainActivity", "Clear sketch event triggers");
         this.drawingView.clear();
