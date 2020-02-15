@@ -52,13 +52,24 @@
         android:textSize="25sp"
         android:id="@+id/more"
         />
-
     <Button
         android:layout_width="300dp"
         android:layout_marginTop="20dp"
         android:layout_height="50dp"
         android:layout_centerHorizontal="true"
         android:layout_below="@+id/more"
+        android:background="@drawable/yellow_btn"
+        android:text="affair"
+        android:textSize="25sp"
+        android:id="@+id/affair"
+        />
+
+    <Button
+        android:layout_width="300dp"
+        android:layout_marginTop="20dp"
+        android:layout_height="50dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/affair"
         android:background="@drawable/yellow_btn"
         android:text="Exit"
         android:textSize="25sp"

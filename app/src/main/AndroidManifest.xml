@@ -17,6 +17,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppThemeNoActionBar">
+        <activity android:name=".Article"></activity>
+        <activity android:name=".Topic" />
+        <activity android:name=".Quiz" />
         <activity android:name=".Instruction" />
         <activity android:name=".SinglePlayer" />
         <activity
@@ -28,11 +31,11 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".MainActivity"></activity>
+        <activity android:name=".MainActivity" />
         <activity
             android:name=".ObjectActivity"
             android:label="@string/title_activity_object"
-            android:theme="@style/AppThemeNoActionBar"></activity>
+            android:theme="@style/AppThemeNoActionBar" />
     </application>
 
 </manifest>
