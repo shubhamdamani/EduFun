@@ -85,7 +85,7 @@ public class MainActivity extends AppCompatActivity {
         channel = wifiP2pManager.initialize(this, getMainLooper(), null);
         bReceiver = new Wifip2pBreceiver(wifiP2pManager, channel,this);
 
-        addFragment(new fragment_1(),true,"one");
+        addFragment(new fragment_1(),false,"one");
 
 
     }
