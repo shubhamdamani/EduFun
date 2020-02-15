@@ -1,24 +1,29 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout
-    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:background="@drawable/bck">
+    android:background="@drawable/main_menu_back">
 
     <Button
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="60dp"
         android:text="turn on"
         android:textSize="25sp"
         android:id="@+id/enablewifi"
+        android:background="@drawable/yellow_btn"
+        android:layout_margin="20dp"
         />
     <Button
         android:layout_width="match_parent"
         android:layout_alignParentLeft="true"
-        android:layout_height="wrap_content"
+        android:layout_height="60dp"
         android:id="@+id/discover"
         android:layout_below="@+id/enablewifi"
+        android:background="@drawable/yellow_btn"
         android:textSize="25sp"
+        android:layout_margin="20dp"
         android:text="discover"/>
 
 

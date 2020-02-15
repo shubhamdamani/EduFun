@@ -4,36 +4,49 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/main_menu_back"
     tools:context=".MainMenu">
 
     <Button
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="200dp"
+        android:layout_centerHorizontal="true"
         android:text="SinglePlayer"
         android:textSize="25sp"
         android:id="@+id/single"
+        android:background="@drawable/yellow_btn"
         />
 
     <Button
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
         android:text="Multiplayer"
         android:layout_below="@+id/single"
+        android:background="@drawable/yellow_btn"
         android:textSize="25sp"
         android:id="@+id/multi"
         />
     <Button
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
         android:text="Instructions"
         android:layout_below="@+id/multi"
+        android:background="@drawable/yellow_btn"
         android:textSize="25sp"
         android:id="@+id/inst"
         />
     <Button
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_width="300dp"
+        android:layout_marginTop="20dp"
+        android:layout_height="50dp"
+        android:layout_centerHorizontal="true"
         android:layout_below="@+id/inst"
+        android:background="@drawable/yellow_btn"
         android:text="Exit"
         android:textSize="25sp"
         android:id="@+id/exit"
