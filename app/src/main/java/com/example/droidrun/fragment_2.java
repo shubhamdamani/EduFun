@@ -157,7 +157,7 @@ public class fragment_2 extends Fragment {
 //        mainActivity.sendReceive.write(tt.getBytes());
         // Timer in background for total play time
 
-       /* int val = 60;
+        int val = 60;
         Thread timer_thread = new Thread(new Runnable() {
             @Override
             public void run() {
@@ -175,6 +175,7 @@ public class fragment_2 extends Fragment {
 
                     mediaOver.start();
 
+
                     // Do some stuff
                 } catch (Exception e) {
                     e.getLocalizedMessage();
@@ -182,7 +183,7 @@ public class fragment_2 extends Fragment {
             }
         });
 
-        timer_thread.start();*/
+        timer_thread.start();
 
         // instantiate classifier
     /*    try {
@@ -257,8 +258,8 @@ public class fragment_2 extends Fragment {
 
             mainActivity.sendReceive.write(s.getBytes());
 
-          //  mediaRight.start();
-           // mainView.setBackgroundColor(Color.rgb(78,175,36));
+           mediaRight.start();
+            mainView.setBackgroundColor(Color.rgb(78,175,36));
         } else {
             mainView.setBackgroundColor(Color.rgb(204, 0,0));
             mediaWrong.start();
