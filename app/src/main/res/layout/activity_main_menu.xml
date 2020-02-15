@@ -9,9 +9,34 @@
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:text="SinglePlayer"
+        android:textSize="25sp"
+        android:id="@+id/single"
+        />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
         android:text="Multiplayer"
+        android:layout_below="@+id/single"
         android:textSize="25sp"
         android:id="@+id/multi"
+        />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Instructions"
+        android:layout_below="@+id/multi"
+        android:textSize="25sp"
+        android:id="@+id/inst"
+        />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/inst"
+        android:text="Exit"
+        android:textSize="25sp"
+        android:id="@+id/exit"
         />
 
 
