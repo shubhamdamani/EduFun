@@ -65,6 +65,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
 
+
         try {
             this.classifier = new DoodleImgClassifier(this);
         } catch (IOException e) {
@@ -159,6 +160,7 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onPause() {
         super.onPause();
+
         unregisterReceiver(bReceiver);
     }
 
