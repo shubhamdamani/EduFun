@@ -17,18 +17,22 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppThemeNoActionBar">
-        <activity android:name=".Instruction"></activity>
+        <activity android:name=".Instruction" />
         <activity android:name=".SinglePlayer" />
-        <activity android:name=".MainMenu" android:theme="@style/AppThemeNoActionBar" >
-        <intent-filter>
-            <action android:name="android.intent.action.MAIN" />
+        <activity
+            android:name=".MainMenu"
+            android:theme="@style/AppThemeNoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
 
-            <category android:name="android.intent.category.LAUNCHER" />
-        </intent-filter>
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
         </activity>
-        <activity android:name=".MainActivity">
-
-        </activity>
+        <activity android:name=".MainActivity"></activity>
+        <activity
+            android:name=".ObjectActivity"
+            android:label="@string/title_activity_object"
+            android:theme="@style/AppThemeNoActionBar"></activity>
     </application>
 
 </manifest>

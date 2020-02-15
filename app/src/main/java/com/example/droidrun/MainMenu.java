@@ -8,7 +8,7 @@ import android.widget.Button;
 
 public class MainMenu extends AppCompatActivity {
 
-    Button multiplayer,singleplayer,inst,exi;
+    Button multiplayer,singleplayer,inst,exi,more;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -19,6 +19,7 @@ public class MainMenu extends AppCompatActivity {
         singleplayer=findViewById(R.id.single);
         inst=findViewById(R.id.inst);
         exi=findViewById(R.id.exit);
+        more = findViewById(R.id.more);
 
         multiplayer.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -49,6 +50,14 @@ public class MainMenu extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 android.os.Process.killProcess(android.os.Process.myPid());
+            }
+        });
+
+        more.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(MainMenu.this,ObjectActivity.class);
+                startActivity(intent);
             }
         });
 
