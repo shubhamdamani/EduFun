@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:fillViewport="false">
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="vertical" android:layout_width="match_parent"
+        android:layout_height="match_parent">
+            <TextView
+                android:id="@+id/q1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="ques"
+                android:textSize="15sp" />
+
+            <EditText
+                android:id="@+id/a1"
+                android:layout_width="match_parent"
+                android:layout_height="30sp"
+                android:background="@drawable/yellow_btn"
+
+                android:hint="answer" />
+
+            <TextView
+                android:id="@+id/q2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="ques"
+                android:textSize="15sp" />
+
+            <EditText
+                android:id="@+id/a2"
+                android:layout_width="match_parent"
+                android:layout_height="30sp"
+                android:background="@drawable/yellow_btn"
+
+                android:hint="answer" />
+
+            <TextView
+                android:id="@+id/q3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="ques"
+                android:textSize="15sp" />
+
+            <EditText
+                android:id="@+id/a3"
+                android:layout_width="match_parent"
+                android:layout_height="30sp"
+                android:background="@drawable/yellow_btn"
+
+                android:hint="answer" />
+
+            <TextView
+                android:id="@+id/q4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="ques"
+                android:textSize="15sp" />
+
+            <EditText
+                android:id="@+id/a4"
+                android:layout_width="match_parent"
+                android:layout_height="30sp"
+                android:background="@drawable/yellow_btn"
+
+                android:hint="answer" />
+
+
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="subbmit"
+            android:id="@+id/submit"
+            />
+
+        </LinearLayout>
+
+
+
+    </ScrollView>
+
+
+
+
+
