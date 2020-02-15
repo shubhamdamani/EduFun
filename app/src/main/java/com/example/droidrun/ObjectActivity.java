@@ -80,7 +80,6 @@ public class ObjectActivity extends AppCompatActivity implements TextToSpeech.On
                 final List<Classifier.Recognition> results = classifier.recognizeImage(bitmap);
 
                 Classifier.Recognition img = results.get(0);
-                //   textViewResult.se
 
                 String label = img.getTitle();
 

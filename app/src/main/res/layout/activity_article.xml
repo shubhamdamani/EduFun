@@ -2,14 +2,58 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".Article">
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="100sp"
+        android:text="CURRENT AFFAIRS"
+        android:layout_alignParentTop="true"
+        android:paddingBottom="40sp"
+        android:id="@+id/header"
+        />
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="100sp"
+        android:layout_below="@+id/header"
+        android:id="@+id/q1"
+
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="100sp"
+        android:id="@+id/q2"
+        android:layout_below="@id/q1"
+
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="100sp"
+        android:id="@+id/q3"
+        android:layout_below="@id/q2"
+
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="100sp"
+        android:id="@+id/q4"
+        android:layout_below="@id/q3"
+
+        />
 
     <Button
         android:layout_width="match_parent"
         android:layout_height="60sp"
         android:text="test"
+        android:layout_below="@id/q4"
         android:id="@+id/ttest"/>
+
 
 </RelativeLayout>

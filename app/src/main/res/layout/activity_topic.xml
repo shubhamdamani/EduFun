@@ -11,25 +11,25 @@
         android:layout_width="match_parent"
         android:layout_height="50sp"
         android:id="@+id/tp1"
-        android:text="sports"/>
+        android:text="Sports"/>
     <TextView
         android:layout_width="match_parent"
         android:layout_height="50sp"
         android:id="@+id/tp2"
         android:layout_below="@+id/tp1"
-        android:text="sports"/>
+        android:text="Movies"/>
     <TextView
         android:layout_width="match_parent"
         android:layout_height="50sp"
         android:id="@+id/tp3"
         android:layout_below="@+id/tp2"
-        android:text="sports"/>
+        android:text="Science"/>
     <TextView
         android:layout_width="match_parent"
         android:layout_height="50sp"
         android:id="@+id/tp4"
         android:layout_below="@+id/tp3"
-        android:text="sports"/>
+        android:text="Technology"/>
 
 
 
