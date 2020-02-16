@@ -254,6 +254,7 @@ public class fragment_2 extends Fragment {
             s=sn.toString();
             Toast.makeText(getContext(),s,Toast.LENGTH_LONG).show();
             score.setText(u);
+            onNextClick(view);
 
 
             mainActivity.sendReceive.write(s.getBytes());

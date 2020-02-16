@@ -216,7 +216,7 @@ public class MainActivity extends AppCompatActivity {
                 outputStream=socket.getOutputStream();
             } catch (IOException e) {
 
-                Toast.makeText(getApplicationContext(),"GADBAD",Toast.LENGTH_SHORT).show();
+                Toast.makeText(getApplicationContext(),"Error",Toast.LENGTH_SHORT).show();
                 e.printStackTrace();
             }
         }

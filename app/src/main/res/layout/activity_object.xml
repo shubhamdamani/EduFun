@@ -39,7 +39,9 @@
             android:gravity="center"
             android:maxLines="15"
             android:scrollbars="vertical"
-            android:textColor="@android:color/black" />
+            android:textColor="@android:color/black"
+            android:textSize="24sp"
+            android:textStyle="bold" />
 
     </LinearLayout>
 

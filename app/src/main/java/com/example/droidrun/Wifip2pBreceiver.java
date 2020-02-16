@@ -60,7 +60,7 @@ public class Wifip2pBreceiver extends BroadcastReceiver {
                 mManager.requestConnectionInfo(mChannel,mActivity.connectionInfoListener);
             }else
             {
-                Toast.makeText(mActivity,"discon",Toast.LENGTH_SHORT).show();
+                Toast.makeText(mActivity,"disconnected",Toast.LENGTH_SHORT).show();
             }
 
         } else if (WifiP2pManager.WIFI_P2P_THIS_DEVICE_CHANGED_ACTION.equals(action)) {

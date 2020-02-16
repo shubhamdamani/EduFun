@@ -22,7 +22,7 @@ public class ClassifierResult {
         this.labelIndex = findMaxProbIndex(result); // set index position
         this.prob = result[labelIndex]; // set prob
         this.labelName = labels.get(labelIndex); // search for labelName
-        this.topKList = getTopkLabels(3, result);
+        this.topKList = getTopkLabels(5, result);
 
     }
 
