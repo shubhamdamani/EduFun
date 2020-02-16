@@ -11,6 +11,7 @@ import android.widget.Toast;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Random;
 
 public class Quiz extends AppCompatActivity {
 
@@ -49,242 +50,97 @@ public class Quiz extends AppCompatActivity {
         list.add("a");
         list.add("on");
 
-         String ans1 = null,ans2 = null,ans3 = null,ans4=null;
+        // String ans1 = null,ans2 = null,ans3 = null,ans4=null;
 
         StringBuilder tmp=new StringBuilder();
+        StringBuilder tmp1=new StringBuilder();
+        StringBuilder tmp2=new StringBuilder();
+        StringBuilder tmp3=new StringBuilder();
         int cnt=0;
 
+        List<String> ls=new ArrayList<>();
         for(String w:a.split("\\s",0))
         {
-            if(cnt>0)
-            {
-                tmp.append(" "+w);
-                continue;
-            }
-
-            if(w.equals(list.get(0)))
-            {
-                String r=list.get(0);
-                cnt++;
-                tmp.append(" ___");
-                ans1=r;
-                list.remove(r);
-                list.add(r);
-
-
-
-            }else if(w.equals(list.get(1)))
-            {
-                String r=list.get(1);
-                cnt++;
-                ans1=r;
-                tmp.append(" ___");
-                list.remove(r);
-                list.add(r);
-
-
-            }else if(w.equals(list.get(2)))
-            {
-                String r=list.get(2);
-                cnt++;
-                ans1=r;
-                tmp.append(" ___");
-                list.remove(r);
-                list.add(r);
-
-
-            }else if(w.equals(list.get(3)))
-            {
-                String r=list.get(3);
-                cnt++;
-                ans1=r;
-                tmp.append(" ___");
-                list.remove(r);
-                list.add(r);
-
-
-            }
+            ls.add(w);
         }
 
-        q1.setText(tmp);
-        //tmp="";
-        StringBuilder tmp1=new StringBuilder();
-        int cnt1=0;
+        int rd = new Random().nextInt(ls.size()-1);
+        String ans1=ls.get(rd).toLowerCase();
+
+        for(String w:a.split("\\s",0)) {
+            if (cnt == rd) {
+                tmp.append(" ___");
+            } else {
+                tmp.append(" " + w);
+            }
+            cnt++;
+        }
+        ls.clear();
+        cnt=0;
 
         for(String w:b.split("\\s",0))
         {
-            if(cnt1>0)
-            {
-                tmp1.append(" "+w);
-                continue;
-            }
-
-            if(w.equals(list.get(0)))
-            {
-                String r=list.get(0);
-                cnt1++;
-                tmp1.append(" ___");
-                ans2=r;
-                list.remove(r);
-                list.add(r);
-
-
-
-            }else if(w.equals(list.get(1)))
-            {
-                String r=list.get(1);
-                cnt1++;
-                ans2=r;
-                tmp1.append(" ___");
-                list.remove(r);
-                list.add(r);
-
-
-            }else if(w.equals(list.get(2)))
-            {
-                String r=list.get(2);
-                cnt1++;
-                ans2=r;
-                tmp1.append(" ___");
-                list.remove(r);
-                list.add(r);
-
-
-            }else if(w.equals(list.get(3)))
-            {
-                String r=list.get(3);
-                cnt1++;
-                ans2=r;
-                tmp1.append(" ___");
-                list.remove(r);
-                list.add(r);
-
-
-            }
+            ls.add(w);
         }
+        rd = new Random().nextInt(ls.size()-1);
+        String ans2=ls.get(rd).toLowerCase();
 
-        q2.setText(tmp1 );
-
-        StringBuilder tmp2=new StringBuilder();
-        int cnt2=0;
+        for(String w:b.split("\\s",0)) {
+            if (cnt == rd) {
+                tmp1.append(" ___");
+            } else {
+                tmp1.append(" " + w);
+            }
+            cnt++;
+        }
+        ls.clear();
+        cnt=0;
 
         for(String w:c.split("\\s",0))
         {
-            if(cnt2>0)
-            {
-                tmp2.append(" "+w);
-                continue;
-            }
-
-            if(w.equals(list.get(0)))
-            {
-                String r=list.get(0);
-                cnt2++;
-                tmp2.append(" ___");
-                ans3=r;
-                list.remove(r);
-                list.add(r);
-
-
-
-            }else if(w.equals(list.get(1)))
-            {
-                String r=list.get(1);
-                cnt2++;
-                ans3=r;
-                tmp2.append(" ___");
-                list.remove(r);
-                list.add(r);
-
-
-            }else if(w.equals(list.get(2)))
-            {
-                String r=list.get(2);
-                cnt2++;
-                ans3=r;
-                tmp2.append(" ___");
-                list.remove(r);
-                list.add(r);
-
-
-            }else if(w.equals(list.get(3)))
-            {
-                String r=list.get(3);
-                cnt2++;
-                ans3=r;
-                tmp2.append(" ___");
-                list.remove(r);
-                list.add(r);
-
-
-            }
+            ls.add(w);
         }
+        rd = new Random().nextInt(ls.size()-1);
+        String ans3=ls.get(rd).toLowerCase();
 
-        q3.setText(tmp2 );
-
-
-        StringBuilder tmp3=new StringBuilder();
-        int cnt3=0;
+        for(String w:c.split("\\s",0)) {
+            if (cnt == rd) {
+                tmp2.append(" ___");
+            } else {
+                tmp2.append(" " + w);
+            }
+            cnt++;
+        }
+        ls.clear();
+        cnt=0;
 
         for(String w:d.split("\\s",0))
         {
-            if(cnt3>0)
-            {
-                tmp3.append(" "+w);
-                continue;
+            ls.add(w);
+        }
+        rd = new Random().nextInt(ls.size()-1);
+        String ans4=ls.get(rd).toLowerCase();
+
+        for(String w:d.split("\\s",0)) {
+            if (cnt == rd) {
+                tmp3.append(" ___");
+            } else {
+                tmp3.append(" " + w);
             }
-
-            if(w.equals(list.get(0)))
-            {
-                String r=list.get(0);
-                cnt3++;
-                tmp3.append(" ___");
-                ans4=r;
-                list.remove(r);
-                list.add(r);
-
-
-
-            }else if(w.equals(list.get(1)))
-            {
-                String r=list.get(1);
-                cnt3++;
-                ans4=r;
-                tmp3.append(" ___");
-                list.remove(r);
-                list.add(r);
-
-
-            }else if(w.equals(list.get(2)))
-            {
-                String r=list.get(2);
-                cnt3++;
-                ans4=r;
-                tmp3.append(" ___");
-                list.remove(r);
-                list.add(r);
-
-
-            }else if(w.equals(list.get(3)))
-            {
-                String r=list.get(3);
-                cnt3++;
-                ans4=r;
-                tmp3.append(" ___");
-                list.remove(r);
-                list.add(r);
-
-
-            }
+            cnt++;
         }
 
-        q4.setText(tmp3 );
+
+        q1.setText(tmp);
+        q2.setText(tmp1);
+        q3.setText(tmp2);
+        q4.setText(tmp3);
+
 
         final String finalAns = ans1;
         final String finalAns1 = ans2;
         final String finalAns2 = ans3;
         final String finalAns3 = ans4;
-        final String finalAns4 = ans1;
         submit.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -297,62 +153,45 @@ public class Quiz extends AppCompatActivity {
                 {
 
                 }else{
-
                     li.add("1");
+
+
+                    e1.setText("ANS"+finalAns);
                 }
                 if(r2.toLowerCase().equals(finalAns1))
                 {
 
                 }else{
+                    li.add("1");
 
-                    li.add("2");
+
+                    e2.setText("ANS"+finalAns1);
                 }
                 if(r3.toLowerCase().equals(finalAns2))
                 {
 
                 }else{
 
-                    li.add("3");
+                    li.add("1");
+
+                    e3.setText("ANS"+finalAns2);
                 }
                 if(r4.toLowerCase().equals(finalAns3))
                 {
 
                 }else{
 
-                    li.add("4");
+                    e4.setText("ANS"+finalAns3);
+                    li.add("1");
                 }
 
                 if(li.isEmpty())
                 {
                     Toast.makeText(getApplicationContext(),"ALL CORRECT",Toast.LENGTH_SHORT).show();
-                }else{
-                    StringBuilder stringBuilder=new StringBuilder();
-                    int siz=0;
-                    while(siz<li.size())
-                    {
-                        stringBuilder.append(li.get(siz));
-                        if(li.get(siz).equals("1"))
-                        {
-                            stringBuilder.append(" "+ finalAns);
-                        }else if(li.get(siz).equals("2"))
-                        {
-                            stringBuilder.append(" "+ finalAns2);
-                        }
-                        else if(li.get(siz).equals("3"))
-                        {
-                            stringBuilder.append(" "+ finalAns3);
-                        }
-                        else{
-                            stringBuilder.append(" "+ finalAns4);
-                        }
-                        siz++;
-                    }
-                    String disp=stringBuilder.toString();
-                    Toast.makeText(getApplicationContext(),disp,Toast.LENGTH_SHORT).show();
-
+                }else {
+                    Toast.makeText(getApplicationContext(), "CHECK THE CORRECT ANSWERS", Toast.LENGTH_SHORT).show();
                 }
-                Intent i=new Intent(Quiz.this,MainMenu.class);
-                startActivity(i);
+
 
             }
         });
@@ -363,5 +202,8 @@ public class Quiz extends AppCompatActivity {
 
 
 
+
     }
+
+
 }

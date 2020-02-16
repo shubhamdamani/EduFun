@@ -139,7 +139,7 @@ public class ObjectActivity extends AppCompatActivity implements TextToSpeech.On
             float i=50;
             if(result==TextToSpeech.LANG_MISSING_DATA || result==TextToSpeech.LANG_NOT_SUPPORTED){
 
-                Toast.makeText(ObjectActivity.this,"not",Toast.LENGTH_SHORT).show();
+                Toast.makeText(ObjectActivity.this,"unable to tts",Toast.LENGTH_SHORT).show();
             }
             else{
                 btnDetectObject.setEnabled(true);
@@ -148,7 +148,7 @@ public class ObjectActivity extends AppCompatActivity implements TextToSpeech.On
         }
         else{
 
-            Toast.makeText(ObjectActivity.this,"fail",Toast.LENGTH_SHORT).show();
+            Toast.makeText(ObjectActivity.this,"unable to tts",Toast.LENGTH_SHORT).show();
         }
 
 
