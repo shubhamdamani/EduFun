@@ -59,7 +59,7 @@
         android:layout_centerHorizontal="true"
         android:layout_below="@+id/more"
         android:background="@drawable/yellow_btn"
-        android:text="affair"
+        android:text="GK"
         android:textSize="25sp"
         android:id="@+id/affair"
         />
