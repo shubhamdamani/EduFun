@@ -1,6 +1,7 @@
 package com.example.droidrun;
 
 import android.app.Activity;
+import android.app.Dialog;
 import android.graphics.Bitmap;
 import android.graphics.Color;
 import android.media.MediaPlayer;
@@ -32,7 +33,7 @@ public class SinglePlayer extends AppCompatActivity {
     TextView timer;
     TextView textViewResult;
     TextView textViewDraw;
-
+    Thread timer_thread;
     Button det,cle,nex;
     private DoodleImgClassifier classifier;
     MediaPlayer mediaRight, mediaWrong, mediaOver;
@@ -86,7 +87,7 @@ public class SinglePlayer extends AppCompatActivity {
             e.printStackTrace();
         }
         int val = 60;
-        Thread timer_thread = new Thread(new Runnable() {
+        timer_thread = new Thread(new Runnable() {
             @Override
             public void run() {
                 int total = 60;
@@ -109,7 +110,7 @@ public class SinglePlayer extends AppCompatActivity {
                     e.getLocalizedMessage();
                 }
             }
-            
+
         });
 
         timer_thread.start();
@@ -151,6 +152,14 @@ public class SinglePlayer extends AppCompatActivity {
 
         resetView();
 
+    }
+
+    @Override
+    public void onBackPressed() {
+        timer_thread.interrupt();
+        Log.i("MainActivity", "done");
+
+        super.onBackPressed();
     }
 
     public void onClearClick(View view) {

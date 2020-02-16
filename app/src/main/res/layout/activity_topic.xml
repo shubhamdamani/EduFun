@@ -5,31 +5,54 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/design_default_color_primary"
-    tools:context=".Topic">
+    tools:context=".Topic"
+    android:layout_centerInParent="true"
+    android:paddingVertical="200sp"
+    android:paddingHorizontal="20sp">
 
     <TextView
         android:layout_width="match_parent"
-        android:layout_height="50sp"
+        android:layout_height="80sp"
         android:id="@+id/tp1"
-        android:text="Sports"/>
+        android:textSize="20sp"
+        android:text="Sports"
+        android:textStyle="bold"
+        android:background="@drawable/blue_bkg_btn"
+        android:paddingVertical="25sp"
+        android:textAlignment="center"/>
     <TextView
         android:layout_width="match_parent"
-        android:layout_height="50sp"
+        android:layout_height="80sp"
         android:id="@+id/tp2"
         android:layout_below="@+id/tp1"
-        android:text="Movies"/>
+        android:text="Movies"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:background="@drawable/blue_bkg_btn"
+        android:paddingVertical="25sp"
+        android:textAlignment="center"/>
     <TextView
         android:layout_width="match_parent"
-        android:layout_height="50sp"
+        android:layout_height="80sp"
         android:id="@+id/tp3"
         android:layout_below="@+id/tp2"
-        android:text="Science"/>
+        android:text="Science"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:background="@drawable/blue_bkg_btn"
+        android:paddingVertical="25sp"
+        android:textAlignment="center"/>
     <TextView
         android:layout_width="match_parent"
-        android:layout_height="50sp"
+        android:layout_height="80sp"
         android:id="@+id/tp4"
         android:layout_below="@+id/tp3"
-        android:text="Technology"/>
+        android:textStyle="bold"
+        android:text="Technology"
+        android:textSize="20sp"
+        android:background="@drawable/blue_bkg_btn"
+        android:paddingVertical="25sp"
+        android:textAlignment="center"/>
 
 
 

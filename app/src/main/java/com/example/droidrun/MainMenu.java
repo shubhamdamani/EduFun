@@ -12,7 +12,8 @@ import android.widget.Button;
 
 public class MainMenu extends AppCompatActivity {
 
-    Button multiplayer,singleplayer,inst,exi,more,affair;
+    Button multiplayer,singleplayer,exi,more,affair;
+//    Button inst;
     MediaPlayer media;
     private SensorManager mSensorManager;
     private Sensor mAccelerometer;
@@ -25,7 +26,7 @@ public class MainMenu extends AppCompatActivity {
 
         multiplayer=findViewById(R.id.multi);
         singleplayer=findViewById(R.id.single);
-        inst=findViewById(R.id.inst);
+//        inst=findViewById(R.id.inst);
         exi=findViewById(R.id.exit);
         more = findViewById(R.id.more);
         affair=findViewById(R.id.affair);
@@ -56,14 +57,14 @@ public class MainMenu extends AppCompatActivity {
             }
         });
 
-        inst.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent i=new Intent(MainMenu.this,Instruction.class);
-                startActivity(i);
-
-            }
-        });
+//        inst.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+//                Intent i=new Intent(MainMenu.this,Instruction.class);
+//                startActivity(i);
+//
+//            }
+//        });
 
         exi.setOnClickListener(new View.OnClickListener() {
             @Override

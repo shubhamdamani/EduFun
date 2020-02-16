@@ -29,24 +29,24 @@
         android:textSize="25sp"
         android:id="@+id/multi"
         />
-    <Button
-        android:layout_width="300dp"
-        android:layout_height="50dp"
-        android:layout_marginTop="20dp"
-        android:layout_centerHorizontal="true"
-        android:text="Instructions"
-        android:layout_below="@+id/multi"
-        android:background="@drawable/yellow_btn"
-        android:textSize="25sp"
-        android:id="@+id/inst"
-        />
+<!--    <Button-->
+<!--        android:layout_width="300dp"-->
+<!--        android:layout_height="50dp"-->
+<!--        android:layout_marginTop="20dp"-->
+<!--        android:layout_centerHorizontal="true"-->
+<!--        android:text="Instructions"-->
+<!--        android:layout_below="@+id/multi"-->
+<!--        android:background="@drawable/yellow_btn"-->
+<!--        android:textSize="25sp"-->
+<!--        android:id="@+id/inst"-->
+<!--        />-->
 
     <Button
         android:layout_width="300dp"
         android:layout_marginTop="20dp"
         android:layout_height="50dp"
         android:layout_centerHorizontal="true"
-        android:layout_below="@+id/inst"
+        android:layout_below="@+id/multi"
         android:background="@drawable/yellow_btn"
         android:text="More"
         android:textSize="25sp"

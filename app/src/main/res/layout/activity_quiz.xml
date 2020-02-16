@@ -1,24 +1,38 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content"
+    android:layout_height="match_parent"
+    android:background="@color/design_default_color_primary"
     android:fillViewport="false">
-    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-        android:orientation="vertical" android:layout_width="match_parent"
-        android:layout_height="match_parent">
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="20sp">
+        <TextView
+            android:id="@+id/headline"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Quiz"
+            android:textAlignment="center"
+            android:padding="10sp"
+            android:textStyle="bold"
+            android:textSize="30sp" />
             <TextView
                 android:id="@+id/q1"
+                android:layout_below="@id/headline"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="ques"
+                android:padding="10sp"
+                android:textStyle="bold"
                 android:textSize="15sp" />
 
             <EditText
                 android:id="@+id/a1"
                 android:layout_width="match_parent"
-                android:layout_height="30sp"
-                android:background="@drawable/yellow_btn"
-
+                android:padding="20sp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/q1"
                 android:hint="answer" />
 
             <TextView
@@ -26,14 +40,17 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="ques"
-                android:textSize="15sp" />
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:layout_below="@id/a1"
+                android:padding="10sp" />
 
             <EditText
                 android:id="@+id/a2"
                 android:layout_width="match_parent"
-                android:layout_height="30sp"
-                android:background="@drawable/yellow_btn"
-
+                android:layout_height="wrap_content"
+                android:layout_below="@id/q2"
+                android:padding="20sp"
                 android:hint="answer" />
 
             <TextView
@@ -41,14 +58,18 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="ques"
-                android:textSize="15sp" />
+                android:textStyle="bold"
+                android:layout_below="@id/a2"
+                android:textSize="15sp"
+                android:padding="10sp"
+              />
 
             <EditText
                 android:id="@+id/a3"
                 android:layout_width="match_parent"
-                android:layout_height="30sp"
-                android:background="@drawable/yellow_btn"
-
+                android:layout_height="wrap_content"
+                android:layout_below="@id/q3"
+                android:padding="20sp"
                 android:hint="answer" />
 
             <TextView
@@ -56,26 +77,33 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="ques"
-                android:textSize="15sp" />
+                android:layout_below="@id/a3"
+                android:textStyle="bold"
+                android:textSize="15sp"
+                android:padding="10sp"
+               />
 
             <EditText
                 android:id="@+id/a4"
                 android:layout_width="match_parent"
-                android:layout_height="30sp"
-                android:background="@drawable/yellow_btn"
-
+                android:layout_height="wrap_content"
+                android:layout_below="@id/q4"
+                android:padding="20sp"
                 android:hint="answer" />
 
 
 
         <Button
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="100sp"
             android:text="subbmit"
+            android:layout_below="@id/a4"
             android:id="@+id/submit"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/blue_bkg_btn"
             />
 
-        </LinearLayout>
+        </RelativeLayout>
 
 
 
