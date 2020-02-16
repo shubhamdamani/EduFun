@@ -141,7 +141,6 @@ public class Quiz extends AppCompatActivity {
         final String finalAns1 = ans2;
         final String finalAns2 = ans3;
         final String finalAns3 = ans4;
-        final String finalAns4 = ans1;
         submit.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
