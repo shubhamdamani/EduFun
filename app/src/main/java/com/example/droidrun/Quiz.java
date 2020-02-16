@@ -156,7 +156,7 @@ public class Quiz extends AppCompatActivity {
                     li.add("1");
 
 
-                    e1.setText("ANS"+finalAns);
+                    e1.setText("ANSWER : "+finalAns);
                 }
                 if(r2.toLowerCase().equals(finalAns1))
                 {
@@ -165,7 +165,7 @@ public class Quiz extends AppCompatActivity {
                     li.add("1");
 
 
-                    e2.setText("ANS"+finalAns1);
+                    e2.setText("ANSWER : "+finalAns1);
                 }
                 if(r3.toLowerCase().equals(finalAns2))
                 {
@@ -174,14 +174,14 @@ public class Quiz extends AppCompatActivity {
 
                     li.add("1");
 
-                    e3.setText("ANS"+finalAns2);
+                    e3.setText("ANSWER : "+finalAns2);
                 }
                 if(r4.toLowerCase().equals(finalAns3))
                 {
 
                 }else{
 
-                    e4.setText("ANS"+finalAns3);
+                    e4.setText("ANSWER : "+finalAns3);
                     li.add("1");
                 }
 

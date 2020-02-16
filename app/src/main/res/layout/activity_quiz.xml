@@ -96,7 +96,7 @@
         <Button
             android:layout_width="match_parent"
             android:layout_height="100sp"
-            android:text="subbmit"
+            android:text="Submit"
             android:layout_below="@id/a4"
             android:id="@+id/submit"
             android:layout_alignParentBottom="true"
