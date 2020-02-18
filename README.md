@@ -7,7 +7,7 @@
   </a>
 </p>
 <p align="center">
-  This is an Android app which makes learning smarter and enjoyable for kids and develop their knowledge everyday.
+ This is an Android app which makes learning smarter and enjoyable for kids and develop their knowledge everyday.
 </p>
 
 
@@ -43,6 +43,7 @@ Feel free to send us feedback on [Email](mailto:damani.shubham4@gmail.com) or [f
 ## Contributors
 
 <ul>
+  
   <li> <a href="https://github.com/shubhamdamani">Shubham Damani</a></li>
   <li> <a href="https://github.com/vivek0206">Vivek</a></li>
   <li> <a href="https://github.com/IamUtkarshGupta">Utkarsh Gupta</a></li>
