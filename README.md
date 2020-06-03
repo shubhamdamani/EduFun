@@ -7,7 +7,7 @@
   </a>
 </p>
 <p align="center">
- This is an Android app which makes learning smarter and enjoyable for kids and develop their knowledge everyday.
+ This is an Android app which makes learning smarter and enjoyable for kids and helps to improve their knowledge everyday.
 </p>
 
 
